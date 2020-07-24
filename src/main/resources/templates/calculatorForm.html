@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+Hej
+<hr>
+
+Wpisz działanie:<br>
+<form action="/makeCalculation">
+<input type="text" name="calculationValueText" placeholder="Tutaj wpisz działanie!">
+    <button>Oblicz</button>
+</form>
+wynik działania: <br>
+<p th:text="${firstResult}"></p>
+
+</body>
+</html>
